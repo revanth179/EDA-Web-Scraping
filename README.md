@@ -8,6 +8,7 @@ In today's competitive smartphone market, customers struggle to compare devices 
 Understand how specifications such as RAM, ROM, Battery, Camera, and Processor impact the pricing of Samsung smartphones.
 
 **Objectives**
+
 **✔️ Web Scraping**
 
 Scraped Samsung smartphone data from Flipkart using Python, Requests, and BeautifulSoup.
