@@ -4,10 +4,18 @@
 ---
 
 ## 📸 Project Preview  
-*(Add your own images inside an `/images` folder and replace below paths)*
+**Correlation Heatmap**
 
-![Web Scraping](images/scraping.png)
-![Correlation Heatmap](images/heatmap.png)
+The correlation heatmap shows that RAM, camera, and ROM have the strongest positive relationship with smartphone price.
+
+<img width="827" height="702" alt="image" src="https://github.com/user-attachments/assets/4e1ca56d-4f56-4fb7-bcec-e06876e24210" />
+
+**Pie Chart**
+
+The pie chart displays the top 5 most frequently listed Samsung models on Flipkart.
+
+<img width="778" height="509" alt="image" src="https://github.com/user-attachments/assets/c1effa39-e878-4b54-ac60-c0832f5e0b0d" />
+
 
 ---
 
