@@ -1,151 +1,166 @@
-**Web Scraping and Exploratory Data Analysis on Samsung Mobile Phones Dataset**
+# 📱 Samsung Mobile Phones – Web Scraping & Exploratory Data Analysis (EDA)
+### *A Real-World Data Analytics Project using Flipkart Dataset*
 
-**Project Overview**
+---
 
-In today's competitive smartphone market, customers struggle to compare devices due to varying features and price differences. This project aims to solve that by extracting structured data from Flipkart and analyzing how key features affect smartphone pricing — specifically for Samsung mobile phones.
+## 📸 Project Preview  
+*(Add your own images inside an `/images` folder and replace below paths)*
 
-**Goal:**
-Understand how specifications such as RAM, ROM, Battery, Camera, and Processor impact the pricing of Samsung smartphones.
+![Web Scraping](images/scraping.png)
+![Correlation Heatmap](images/heatmap.png)
 
-**Objectives**
+---
 
-**✔️ Web Scraping**
+## 🚀 Project Overview
 
-Scraped Samsung smartphone data from Flipkart using Python, Requests, and BeautifulSoup.
+Understanding smartphone pricing is challenging due to variations in RAM, ROM, camera quality, and battery capacity.  
+This project extracts **real Samsung phone data from Flipkart**, cleans it, and performs **EDA** to understand:
 
-Extracted key specifications:
+- Which features influence price
+- Popular Samsung models
+- Pricing trends across budget, mid-range, and premium phones
 
-Price
+---
 
-RAM
+## 🎯 Goal
 
-ROM
+**Determine how Samsung smartphone specifications impact their pricing.**
 
-Battery
+---
 
-Processor
+## 🗂️ Project Structure
 
-Camera
+📁 Samsung-Mobile-EDA
 
-Cleaned text using Regex & loops.
 
-Stored data in a structured Pandas DataFrame for EDA.
+├── 📘 Mobile_EDA_Project.ipynb
 
-**✔️ Data Preprocessing**
 
-Steps included:
+├── 📊 Flipkart.pptx
 
-Removing unwanted characters
+├── 📄 README.md
 
-Standardizing column names
+└── 📁 dataset/
 
-Extracting numeric values
 
-Handling missing values
+---
 
-Converting data types
+## ✔️ Objectives
 
-Removing invalid entries
+### **1️⃣ Web Scraping**
+- Scraped real-time data from Flipkart using:
+  - **Requests**
+  - **BeautifulSoup**
+- Extracted:
+  - Price  
+  - RAM  
+  - ROM  
+  - Camera  
+  - Battery  
+  - Processor  
+- Cleaned text using **Regex** and string functions  
+- Stored structured data in a Pandas DataFrame  
 
-✔️ Exploratory Data Analysis
+---
 
-Performed using Pandas, Matplotlib, & Seaborn.
+### **2️⃣ Data Preprocessing**
+- Removed unwanted characters  
+- Standardized column names  
+- Extracted numeric values (GB, mAh, MP, etc.)  
+- Fixed inconsistent formats  
+- Converted data types  
+- Handled:
+  - Missing values  
+  - Duplicates  
+  - Invalid entries  
 
-**📊 Data Visualizations**
-**1. Univariate Analysis**
+---
 
-Histograms: Distribution of price, RAM, ROM, battery, camera
+### **3️⃣ Exploratory Data Analysis (EDA)**
 
-Box Plots: Identified outliers & value spread
+Performed using **Pandas, Matplotlib, Seaborn**.
 
-Count Plots: Frequency of each Samsung model
+#### 📊 **Univariate Analysis**
+- Histograms → Distribution of price, RAM, ROM, battery, camera  
+- Box Plots → Outliers & data spread  
+- Count Plot → Most frequently listed models  
+- Pie Chart → Top 5 Samsung models  
 
-Pie Chart: Top 5 most frequently-listed models
+#### 🔍 **Bivariate Analysis**
+- Correlation Heatmap → Feature relationships  
+- Bar Chart → Avg price vs RAM  
+- Scatter Plot → Battery vs Price  
+- Violin Plot → Price ranges by RAM  
 
-**2. Bivariate Analysis**
+---
 
-Correlation Heatmap: Identified feature relationships
+## 🧠 Key Business Questions Answered
 
-Bar Chart: Avg price vs RAM capacity
+- Which Samsung models are most frequently listed on Flipkart?  
+- How do RAM, ROM, camera, and battery affect pricing?  
+- Which feature has the **strongest influence** on price?  
+- What price ranges dominate the Samsung market?  
+- Do higher specs show predictable pricing patterns?  
 
-Scatter Plot: Battery vs price (low correlation)
+---
 
-Violin Plot: Price distribution by RAM variants
+## 🏁 Conclusion
 
-Business Questions Addressed
+✔ RAM, processor, and camera significantly influence smartphone pricing  
+✔ Battery capacity has **low to moderate** impact  
+✔ Most Samsung phones fall in **mid-range pricing**  
+✔ Samsung targets **budget + mid-premium** customer segments  
+✔ EDA revealed clear price–spec relationships  
 
-Which Samsung models are most popular on Flipkart?
+---
 
-How do RAM, ROM, battery, and camera affect mobile pricing?
+## 🔧 Tech Stack
 
-Which specification has the strongest pricing influence?
+| Category | Tools |
+|---------|-------|
+| **Scraping** | Python, Requests, BeautifulSoup |
+| **Cleaning** | Pandas, NumPy, Regex |
+| **Visualization** | Matplotlib, Seaborn |
+| **Documentation** | Markdown, PPT |
 
-What price ranges do most Samsung phones fall into?
+---
 
-Do higher specs show predictable price patterns?
+## 🧩 Challenges Faced
 
-**Conclusion**
+- Dynamic content & anti-scraping restrictions  
+- Cleaning inconsistent units (GB, mAh, MP, GHz)  
+- Extracting numeric values from mixed text  
+- Handling missing values & outliers  
+- Ensuring reliable & accurate scraped data  
 
-RAM, processor, and camera quality strongly influence smartphone pricing.
+---
 
-Battery capacity has moderate impact.
+## 🎓 Learnings
 
-Most Samsung models fall in the mid-range price segment.
+- Real-world **web scraping techniques**  
+- Data cleaning & transformation  
+- Feature extraction from unstructured text  
+- Data visualization & insight generation  
+- Understanding mobile pricing analytics  
 
-Samsung focuses heavily on mid-budget and mid-premium markets.
+---
 
-Project improved our hands-on skills in:
+## 📎 Project Files
 
-Web scraping
+| File | Description |
+|------|-------------|
+| `Mobile_EDA_Project.ipynb` | Full code for scraping, cleaning, and EDA |
+| `Flipkart.pptx` | Project presentation |
+| `dataset/` | Scraped & cleaned dataset |
+| `README.md` | Documentation |
 
-Data cleaning
+---
 
-EDA
+## 🔗 Connect With Me
 
-Extracting real-world insights from unstructured data
+👨‍💻 **Revanth**  
+🌐 LinkedIn: www.linkedin.com/in/revanthsaikumarmanyam  
+💻 GitHub: https://github.com/revanth179  
 
-**Challenges Faced**
+---
 
-Dynamic website content / anti-scraping restrictions
-
-Cleaning inconsistent spec formats (GB, mAh, MP, GHz)
-
-Extracting numeric values from mixed text
-
-Handling missing values, duplicates, and outliers
-
-Ensuring accurate and reliable scraped data
-
-**Project Files**
-
-📘 Mobile_EDA_Project.ipynb (Notebook)
-
-📊 Flipkart.pptx (Project Presentation)
-
-📄 README.md
-
-📁 Dataset (Scraped & cleaned)
-
-**🔧 Tech Stack**
-
-Python
-
-Requests
-
-BeautifulSoup
-
-Pandas
-
-NumPy
-
-Matplotlib
-
-Seaborn
-
-Regex
-
-**🔗 Connect With Us**
-
-Revanth’s LinkedIn: www.linkedin.com/in/revanthsaikumarmanyam
-
-GitHub: https://github.com/revanth179
